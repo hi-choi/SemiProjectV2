@@ -144,22 +144,26 @@
                         <!-- contents 좌측 영역 -->
                         <div class="col-5 offset-1">
                             <div class="form-group row">
-                                <label for="name" class="col-4 col-form-label text-warning text-right">이름</label>
-                                <input type="text" name="name" id="name" class="form-control col-6 border-warning">
+                                <label for="name2" class="col-4 col-form-label text-warning text-right">이름</label>
+                                <input type="text" name="name" id="name2" class="form-control col-6 border-warning">
                             </div>
 
                             <div class="form-group row">
-                                <label for="jumin" class="col-4 col-form-label text-warning text-right">주민번호</label>
-                                <input type="text" name="jumin" id="jumin" class="form-control col-3 border-warning">
-                                &nbsp;&#95;&nbsp;
-                                <input type="text" name="jumin" id="jumin" class="form-control col-3 border-warning">
+                                <label for="jumin1" class="col-4 col-form-label text-warning text-right">주민번호</label>
+                                <input type="text" name="jumin1" id="jumin1" class="form-control col-3 border-warning">
+                                <span class="col-form-label">&nbsp;&mdash;&nbsp;</span>
+                                <input type="text" name="jumin2" id="jumin2" class="form-control col-3 border-warning">
                             </div>
 
                             <div class="form-group row">
+                                <label class="col-4"></label>
+                                <div class="custom-control custom-checkbo">
+                                    <input type="checkbox" id="chkjumin" name="chkjumin" class="custom-control-input" value="y">
+                                    <label for="chkjumin" class="custom-control-label text-warning">주민등록번호 처리에 동의합니다.</label>
+                                </div>
 
-                                <input type="checkbox" id="ckboxJumin" name="ckboxJumin" class="col-1 offset-2 form-control">
-                                <label for="ckboxJumin" class="text-warning col-form-label">주민등록번호 처리에 동의합니다.</label>
                             </div>
+
                         </div>
                         <!-- contents 우측 영역 -->
                         <div class="col-5">
@@ -177,7 +181,7 @@
                     <div class="row">
                         <div class="col text-center">
                         <hr>
-                            <button type="button" id="chk2btn" class="btn btn-primary"> <i class="fa fa-check">확인하기</i></button>
+                            <button type="button" id="chk1btn" class="btn btn-primary"> <i class="fa fa-check">확인하기</i></button>
                             <button type="button" id="cancel1btn" class="btn btn-danger"><i class="fa fa-times"></i>취소하기</button>
 
                         </div>
