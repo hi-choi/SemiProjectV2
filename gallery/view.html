@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BoardView</title>
+
+    <style>
+        .tbbg1 { background:#dff0f8; }
+        .tbbg2 { background:#ccff99; }
+        .tbbg3 { background:#ffffcc;}
+        .pushdwn {margin-top:50px;}
+        .cmtbg1 {background: #ffffcc; padding:7px;}
+        .cmtbg2 {background: #dff0f8; padding:7px;}
+        .pushright {float:right;}
+    </style>
+
+    </head>
+  <body>
+      <div class="container">
+
+        <!-- header Area -->
+    <header class="row">
+         <div class="col"><h1>Lorem Ipsum</h1></div>
+         <div class="col text-right"><h1>
+             <button type="button" class="btn btn-danger"
+                     data-toggle="modal"
+                     data-target="#loginfrm">로그인</button>
+         <button type="button" class="btn btn-primary">회원가입</button></h1></div>
+
+
+    </header>
+
+          <!-- nav Area -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item"><a href="#" class="nav-link">프로젝트소개</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">회원가입</a></li>
+            <li class="nav-item"><a href="#" class="nav-link ">게시판</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">자료실</a></li>
+            <li class="nav-item"><a class="nav-link active">갤러리</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">관리자</a></li>
+          </ul>
+    </nav>
+
+          <!-- main Area -->
+          <div id ="main">
+
+<!-- Page Title -->
+            <div style="margin-top:20px;">
+                <i class="fa fa-image fa-2x">갤러리</i>
+                <hr>
+            </div>
+            <!--본문글-->
+            <div>
+                <div class="row">
+                <!-- 본문글 상단 버튼 -->
+                    <div class="col-5 offset-1">
+                        <button type="button" class="btn btn-light"><i class="fa fa-chevron-left"></i>&nbsp;이전 게시물</button>
+                        <button type="button" class="btn btn-light"><i class="fa fa-chevron-right"></i>&nbsp;다음 게시물</button>
+                    </div>
+                    <div class="col-5 text-right">
+                        <button type="button" class="btn btn-light"><i class="fa fa-plus-circle"></i>&nbsp;새글 쓰기</button>
+                    </div>
+                </div>
+
+                <!-- 본문글 내용-->
+                <div class="row">
+                    <table class="table col-10 offset-1">
+                        <tr class="tbbg1 text-center">
+                            <th colspan="2" >
+                                <h2>My Pretty Cat...</h2>
+                            </th>
+                        </tr>
+                        <tr class="tbbg2">
+                            <td style="width:50%">hi-choi</td>
+                            <td class="text-right">2021.05.20 11:12:13 / 22 / 33</td>
+                        </tr>
+                        <tr class="tbbg3">
+                            <td colspan="2">
+                                <div><img src="/img/cat.jpg" class="img-fluid"></div>
+                                <div><img src="/img/forest.jpg" class="img-fluid"></div>
+                                <div><img src="/img/Marshal.png" class="img-fluid"> </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td colspan="2" class="tbbg4">첨부1
+                        <img src="/img/zip.png"> homework.zip (123KB)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tbbg4">첨부2
+                        <img src="/img/txt.png"> homework.txt (123KB)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tbbg4">첨부3
+                        <img src="/img/png.png"> homework.png (123KB)</td>
+                    </tr>
+                    </table>
+                </div>
+                <!-- 본문글 하단 버튼 -->
+                <div class="row">
+                        <div class="col-5 offset-1">
+                        <button type="button" class="btn btn-warning text-white"><i class="fa fa-edit"></i>&nbsp;수정하기</button>&nbsp;
+                        <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i>&nbsp;삭제하기</button>
+                    </div>
+                    <div class="col-5 text-right">
+                        <button type="button" class="btn btn-light "><i class="fa fa-list"></i>&nbsp;목록으로</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--댓글목록-->
+            <div >
+                <div class="row">
+                    <h3 class="col-10 offset-1"><i class="fa fa-comments fa-2x"></i>나도 한마디</h3>
+                </div>
+                <table class="table col-10 offset-1">
+                    <tr>
+                        <td><h4>hi-choi</h4></td>
+                        <td>
+                            <div class="cmtbg1">2021.05.21 10:10:10</div>
+                            <p>Duis efficitur condimentum condimentum. Duis ut venenatis mauris, vitae maximus eros. Etiam a semper felis. Praesent quis nisl metus.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="cmtbg2">
+                                <span>Hwak-eye</span>
+                                <span class="pushright">2021.05.21 10:10:10</span></div>
+                            <p>Duis efficitur condimentum condimentum. Duis ut venenatis mauris, vitae maximus eros. Etiam a semper felis. Praesent quis nisl metus.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>hi-choi</h4></td>
+                        <td>
+                            <div class="cmtbg1">2021.05.21 10:10:10</div>
+                            <p>Duis efficitur condimentum condimentum. Duis ut venenatis mauris, vitae maximus eros. Etiam a semper felis. Praesent quis nisl metus.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>hi-choi</h4></td>
+                        <td>
+                            <div class="cmtbg1">2021.05.21 10:10:10</div>
+                            <p>Duis efficitur condimentum condimentum. Duis ut venenatis mauris, vitae maximus eros. Etiam a semper felis. Praesent quis nisl metus.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>hi-choi</h4></td>
+                        <td>
+                            <div class="cmtbg1">2021.05.21 10:10:10</div>
+                            <p>Duis efficitur condimentum condimentum. Duis ut venenatis mauris, vitae maximus eros. Etiam a semper felis. Praesent quis nisl metus.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>hi-choi</h4></td>
+                        <td>
+                            <div class="cmtbg1">2021.05.21 10:10:10</div>
+                            <p>Duis efficitur condimentum condimentum. Duis ut venenatis mauris, vitae maximus eros. Etiam a semper felis. Praesent quis nisl metus.</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+            <!--댓글쓰기-->
+            <div>
+                <div class="row">
+                    <form name="replayfrm" id="replayfrm" class="card card-body bg-light col-10 offset-1">
+                        <div class="form-group row justify-content-center">
+                            <label class="col-form-label col-2 pushdwn" for="reply">작성자</label>
+                            <textarea class="form-control col-7" name="reply" id="reply" rows="5"></textarea>&nbsp;&nbsp;
+                            <button class="form-control col-2 pushdwn btn btn-dark" type="button">
+                                <i class="fa fa-comment">&nbsp;댓글쓰기</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+
+
+
+
+        </div>
+      <footer class="card bg-light">
+          <h6 class="col bg-light text-right rounded">&copy; Lorem Ipsum 2021. Powered by hi-choi. All Rights Reserved</h6>
+      </footer>
+    </div>
+
+    <!-- 로그인 폼 모달 -->
+    <div class="modal" id="loginfrm" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title font-weight-bold">로그인</h3>
+                    <button type="button" class="btn btn-light font-weight-bold" data-dismiss="modal">
+                    닫 기
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form name="loginfrm" id="loginfrm" method="post">
+                    <div class="form-group row">
+                        <label for="userid" class="col-form-label col-4 text-right text-danger">아이디</label>
+                        <input type="text" name="userid" id="userid" class="form-control border-danger col-5">
+                    </div>
+                    <div class="form-group row">
+                        <label for="passwd" class="col-form-label col-4 text-right text-danger" >비밀번호</label>
+                        <input type="password" name="passwd" id="passwd" class="form-control border-danger col-5">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-4"></div>
+                        <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label text-warning">로그인 상태 유지</label>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer justify-content-center bg-light">
+                   <button type="button" class="btn btn-danger">로그인</button>
+                   <button type="button" class="btn btn-warning text-white">아이디/비밀번호 찾기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"  crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+<!--
+
+-->
+
+
+
+
