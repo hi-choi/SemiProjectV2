@@ -42,7 +42,7 @@
           <div id ="main">
 
 <!-- Page Title -->
-              <div>
+              <div style="margin-top:20px;">
                 <i class="fa fa-users fa-2x">회원가입</i>
                 <hr>
               </div>
@@ -499,6 +499,24 @@ Copyright © Kakao Corp. All rights reserved.
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+    <script>
+    // 모두 동의합니다.
+        $('#okagree').click(function(){
+
+            if($('#agree1').is(':checked')==false || $('#agree2').is(':checked')==false)
+            {
+                alert('모두 동의하세요!');
+            }
+            else location.href="/join/checkme.html";
+         });
+
+    // 동의하지 않습니다.
+        $('#noagree').click(function(){
+            location.href="/index.html";
+        });
+
+
+    </script>
   </body>
 </html>
 
